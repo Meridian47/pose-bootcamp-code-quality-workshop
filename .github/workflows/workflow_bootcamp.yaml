@@ -1,16 +1,17 @@
 name: “My first CI Workflow"
 on:
-    push:
-    pull_request:
+ push:
+ pull_request:
 jobs:
-    checkout_compile_and_run:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-            uses: actions/checkout@v4
-            with:
-                clean: true
-            - name: compile
-              run: cmake -S build . -B build
-            - name: run
-              run: ./build/address_book_tests
+ checkout_compile_and_run:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout
+     uses: actions/checkout@v4
+     with:
+      clean: true
+    
+   - name: compile
+     run: cmake -S build . -B build
+   - name: run
+     run: ./build/address_book_tests
