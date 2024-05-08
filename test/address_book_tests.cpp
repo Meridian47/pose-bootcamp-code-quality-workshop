@@ -11,3 +11,10 @@ TEST_CASE("entries can be added and removed") {
 	ab.remove_entry("Jane Doe");
 	CHECK_FALSE(ab.has_entry("Jane Doe"));
 }
+
+TEST_CASE("check if name has 1 to 100 characters") {
+	std::string teststring="";
+	CHECK(testring.lenght == 0)
+	CHECK_THROWS(teststring)
+
+}
