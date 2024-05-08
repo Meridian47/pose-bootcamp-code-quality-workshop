@@ -13,8 +13,8 @@ TEST_CASE("entries can be added and removed") {
 }
 
 TEST_CASE("check if name has 1 to 100 characters") {
-	std::string teststring="";
-	CHECK(testring.lenght == 0)
+	std::string teststring ("",0);
+	CHECK(teststring.length == 0)
 	CHECK_THROWS(teststring)
 
 }
