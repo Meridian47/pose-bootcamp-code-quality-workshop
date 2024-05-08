@@ -11,3 +11,10 @@ TEST_CASE("entries can be added and removed") {
 	ab.remove_entry("Jane Doe");
 	CHECK_FALSE(ab.has_entry("Jane Doe"));
 }
+
+TEST_CASE("") {
+    	address_book ab;
+	file_synchronization_provider provider{"~/home/stefan/bernard/test.txt"};
+	ab.add_entry("Test");
+	ab.synchronize(provider);
+}
